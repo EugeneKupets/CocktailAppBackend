@@ -1,1 +1,1 @@
-web: ./gradlew shadowJar && java -jar build/libs/*-all.jar
+web: ./gradlew shadowJar --no-daemon && java -jar build/libs/*-all.jar
