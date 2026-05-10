@@ -7,8 +7,8 @@ import kotlinx.serialization.Serializable
 data class UserInteraction(
     val userId: String,
     val cocktailId: String,
-    val cocktailName: String,
-    val imgSrc: String,
+    val cocktailName: String? = "Cocktail",
+    val imgSrc: String? = "",
     val isFavorite: Boolean,
     val rating: Int
 )
