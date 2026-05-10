@@ -9,6 +9,7 @@ import io.ktor.server.routing.*
 import io.ktor.http.*
 import com.mongodb.client.model.Filters.and
 import com.mongodb.client.model.Filters.eq
+import io.ktor.server.plugins.cors.routing.CORS
 import kotlinx.coroutines.flow.toList
 
 
@@ -16,6 +17,11 @@ fun Application.module() {
     // Налаштування JSON
     install(ContentNegotiation) {
         json()
+    }
+
+    install(CORS) {
+        anyHost()
+        allowHeader(HttpHeaders.ContentType)
     }
 
     routing {
