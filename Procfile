@@ -1,0 +1,1 @@
+web: ./gradlew shadowJar && java -jar build/libs/*-all.jar

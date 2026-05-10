@@ -1,6 +1,7 @@
 [versions]
 kotlin = "2.3.20"
 logback = "1.5.21"
+shadow = "9.1.0"
 
 [libraries]
 logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
@@ -9,3 +10,4 @@ logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "lo
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
